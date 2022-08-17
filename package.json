@@ -1,0 +1,45 @@
+{
+  "name": "aqa",
+  "version": "1.0.0",
+  "description": "tests for amusic",
+  "main": "index.js",
+  "scripts": {
+    "test-api": "jest ./tests/api",
+    "test-web": "playwright test --config=./src/web/playwright.config.ts",
+    "lint": "eslint ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dasha-zayats/webdriver-io.git"
+  },
+  "keywords": [
+    "autotests",
+    "jest",
+    "js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "^17.0.40",
+    "@types/pg": "8.6.5",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "jest": "^28.1.0",
+    "pg": "^8.7.3",
+    "ts-jest": "28.0.5",
+    "ts-node": "10.8.1",
+    "typescript": "4.7.4"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.2.0",
+    "@playwright/test": "^1.23.1",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "jest-html-reporter": "^3.5.0"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
